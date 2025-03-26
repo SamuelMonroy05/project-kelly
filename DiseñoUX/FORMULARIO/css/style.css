@@ -1,0 +1,411 @@
+/*
+Paleta de colores
+#A60815, #BF0F30, #F2F2F2,#402319,#D9ADA9,#4b4949
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Source Sans Pro", sans-serif;;
+    height: 100vh;
+}
+
+
+/*.h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2%;
+}*/
+
+.container_header{
+    width: 100%;
+    height: 41%;
+    background-color: #402319;
+    background-image: linear-gradient(10deg, #4023194f, #a6081544,#1a352891), url(../assets/images/faith-g53171e84d_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding:0.1px
+}
+
+.menu
+{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu > ul > li{
+    display: inline-block;
+    padding: 1.2% 2.2%;
+    background-color:#BF0F30 ;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 22px;
+
+}
+
+.menu > ul > li:hover{
+    background-color: #a60815;
+    border: 2px solid ;
+}
+
+hr{
+    border-color: #402319;
+}
+
+.menu .btn_contacto{
+    background-color: #a60815;
+    border: 3px solid #402319;
+    font-size: 24px;
+}
+
+.title{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 1%;
+    color: aliceblue;
+}
+
+.fm_contact{
+    width: 60%;
+    height: auto;
+    margin: 2% auto;
+    border: 5px solid #2e1940;
+    border-radius: 2% 1%;
+    text-align: center;
+    hr{
+        margin-bottom: 3%;
+    }
+    .title_form{
+        margin: 2% 0;
+        text-align: center;
+        color: #a60815;
+    }
+}
+
+.fm_contact > input, label, button{
+    display: inline-block;
+    width: 80%;
+    margin: 1% 0;
+    font-size:  22px;
+}
+
+.fm_contact > input, .msn{
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 2px solid #020202;
+    outline: none;
+    background-color: rgb(228, 228, 228);
+}
+
+.fm_contact > div, .nombre_prueba > label, .name{
+    text-align: left;
+    padding: 5px;
+    padding-left: 100px;
+}
+
+.msn{
+    width: 80%;
+}
+
+.fm_contact > label{
+    text-align: left;
+    padding: 5px;
+}
+
+input:focus, .msn:focus{
+    border-bottom: none;
+    border-right:  2px solid #030303;
+    background-color: rgb(221, 221, 221);
+}
+
+.btn-enviar,
+.btn_Registrar,
+.btn_Cancelar{
+    width: 30%;
+    margin-top: 2%;
+    padding: 10px 20px;
+    background-color: #a60815;
+    border-radius: 10px;
+    border: solid #402319  3px;
+    color: aliceblue;
+}
+
+.btn-enviar:hover,
+.btn_Registrar:hover,
+.btn_Cancelar:hover{
+    background-color: #a60815;
+    text-decoration: underline;
+}
+
+.btn-accesibility{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+.btn-accesibility button{
+    background-color: #4b4949;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-accesibility button{
+    background-color: black !important;
+}
+
+body.contraste_alto {
+    background-color: black;
+    color: yellow !important;
+}
+
+body.contraste_alto a{
+    color: cyan !important;
+}
+
+.modo-contraste{
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black !important;
+    color: rgb(0, 255, 55) !important;
+}
+
+.footer{
+    width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  background-image: linear-gradient(10deg, #402319, #bf0f30, #a60815 60%);
+  padding: 2%;
+}
+
+.foot {
+    display: inline;
+    margin: 3%;
+    text-align: center;
+  }
+.copy {
+    width: 30%;
+    height: auto;
+    color: #f2f2f2;
+    line-height: 40px;
+}
+.title_about {
+    color: #f2f2f2;
+    margin-bottom: 1%;
+    padding: 1%;
+  }
+.my_nets,
+.map {
+  width: 30%;
+  height: auto;
+}
+ 
+.foot .social_net {
+  list-style: none;
+}
+.title_about {
+  color: #f2f2f2;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+.title_nets {
+  color: #f2f2f2;
+  margin-bottom: 3%;
+  padding: 1%;
+}
+.social_net > li {
+  padding: 1%;
+}
+.nets {
+  width: 8%;
+}
+
+
+
+.alerta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #a60815; /* Color rojo */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 50%;
+    max-width: 400px;
+    z-index: 1000;
+}
+
+
+.textAlerta {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.btnAlerta {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btnAlerta:hover {
+    background-color: black;
+    color: white;
+}
+
+.card {
+    background-color: #f8f1ea; 
+    border: 2px solid #5a3e36; 
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title-card {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.data-card, .text-mail, .text-telefono, .text-msn {
+    font-size: 1em;
+    color: #000000;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    margin: 10px 0;
+}
+
+.cardsEstudiantes {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.error-message {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-top: 5px;
+    display: block; 
+}
+
+@media screen and (max-width: 1024px) {
+    .fm_contact {
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .copy, .my_nets, .map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+
+    .menu > ul > li {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .btn-accesibility {
+        right: 5px;
+    }
+
+    .fm_contact {
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .fm_contact {
+        width: 100%;
+        border: none;
+    }
+
+    .fm_contact > input, .msn {
+        width: 90%;
+    }
+
+    .btn-enviar {
+        width: 50%;
+    }
+
+    .footer {
+        padding: 5%;
+    }
+
+    .btn-accesibility {
+        top: auto;
+        bottom: 10px;
+        flex-direction: row;
+    }
+}
+
+

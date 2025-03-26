@@ -1,0 +1,310 @@
+/*
+Paleta de colores
+#A60815, #BF0F30, #F2F2F2,#402319,#D9ADA9,#4b4949
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Source Sans Pro", sans-serif;;
+    height: 100vh;
+}
+
+
+/*.h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2%;
+}*/
+
+.container_header{
+    width: 100%;
+    height: 41%;
+    background-color: #402319;
+    background-image: linear-gradient(10deg, #4023194f, #a6081544,#4b494991), url(../assets/images/faith-g53171e84d_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding:0.1px
+}
+
+.menu
+{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu > ul > li{
+    display: inline-block;
+    padding: 1.2% 2.2%;
+    background-color:#BF0F30 ;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 22px;
+
+}
+
+.menu > ul > li:hover{
+    background-color: #a60815;
+    border: 2px solid ;
+}
+
+hr{
+    border-color: #402319;
+}
+
+.menu .btn_inicio{
+    background-color: #a60815;
+    border: 3px solid #402319;
+    font-size: 24px;
+}
+
+.title{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 1%;
+    color: aliceblue;
+    padding-block: 10px;
+}
+.btn-accesibility{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+.btn-accesibility button{
+    background-color: #4b4949;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-accesibility button{
+    background-color: black !important;
+}
+
+body.contraste_alto {
+    background-color: black;
+    color: yellow !important;
+}
+
+body.contraste_alto a{
+    color: cyan !important;
+}
+
+.modo-contraste{
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black !important;
+    color: rgb(0, 255, 55) !important;
+}
+
+.inicio .title_one{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin: 20px;
+    margin-top: 10px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding-block: 10px;
+    padding-top: 10px;
+}   
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.seccion {
+    background-color: rgb(255, 83, 83);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+#seccion3 {
+    margin: 0 auto;
+    width: 50%;
+}
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul.contenido li::before {
+    content: "• ";  
+    font-weight: bold;
+    color: black;
+    margin-right: 8px;
+}
+
+
+.footer{
+    width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  background-image: linear-gradient(10deg, #402319, #bf0f30, #a60815 60%);
+  padding: 2%;
+}
+
+.foot {
+    display: inline;
+    margin: 3%;
+    text-align: center;
+  }
+.copy {
+    width: 30%;
+    height: auto;
+    color: #f2f2f2;
+    line-height: 40px;
+}
+.title_about {
+    color: #f2f2f2;
+    margin-bottom: 1%;
+    padding: 1%;
+  }
+.my_nets,
+.map {
+  width: 30%;
+  height: auto;
+  color: #f2f2f2;
+}
+ 
+.foot .social_net {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+.title_about {
+  color: #f2f2f2;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+.title_nets {
+  color: #f2f2f2;
+  margin-bottom: 3%;
+  padding: 1%;
+}
+.social_net > li {
+  padding: 1%;
+}
+.nets {
+  width: 8%;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .seccion {
+        width: 80%;
+    }
+
+    #seccion3 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+
+    .menu > ul > li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .contenedor {
+        gap: 10px;
+    }
+
+    .seccion {
+        width: 90%;
+    }
+
+    #seccion3 {
+        width: 85%;
+    }
+
+    .btn-accesibility {
+        right: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .copy, .my_nets, .map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .inicio .title_one {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .seccion {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #seccion3 {
+        width: 100%;
+    }
+
+    .btn-accesibility {
+        bottom: 10px;
+        flex-direction: row;
+    }
+}
